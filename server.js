@@ -5,12 +5,12 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Serve static files from the "public" directory under the "/lab1/" path
-app.get('/', (req, res) => {
-  res.redirect('/lab1/index.html');
-});
+// app.get('/', (req, res) => {
+//   res.redirect('/lab1/index.html');
+// });
 
 
-app.use('/lab1/', express.static(path.join(__dirname, 'public')));
+app.use('/', express.static(path.join(__dirname, 'public')));
 
 
 app.listen(PORT, () => {
