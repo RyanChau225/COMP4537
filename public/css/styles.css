@@ -1,0 +1,60 @@
+/* Textarea styling */
+textarea {
+  width: 300px;
+  height: 100px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  resize: vertical;  /* Allows user to resize textarea vertically only */
+}
+
+/* Button styling */
+button, a {
+  background: linear-gradient(145deg, #f0f0f0, #c4c4c4);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;  /* Removes underlines from links */
+  color: #333;  /* Text color */
+  transition: background 0.3s;  /* Smooth transition for hover effect */
+}
+
+button:hover, a:hover {
+  background: linear-gradient(145deg, #c4c4c4, #f0f0f0);
+}
+
+/* Reader's Display Box styling */
+.note-display {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  max-width: 350px;  /* Set a max width */
+  overflow: auto;  /* In case of long content */
+}
+
+/* Timestamp sections for Last saved and Last updated */
+.save-time, .retrieval-time {
+  margin: 20px 0;
+  font-size: 18px;
+  color: #444;
+  text-align: center;
+}
+
+/* Add Note button adjustments for writer */
+#addTextBox {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Adjustments for Back buttons */
+#writeBckBtn, #readBckBtn {
+  display: block;
+  margin: 20px auto;
+}
